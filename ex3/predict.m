@@ -30,7 +30,7 @@ Z2 = Theta1 * A1;
 A2 = [ones(1, m); sigmoid(Z2)];
 Z3 = Theta2 * A2;
 
-% A3 == h(x) == output layer
+% A3 == h(x) == output layer (has no bias term (ones(1, m)))
 A3 = sigmoid(Z3);
 
 [value, p] = max(A3', [], 2);
